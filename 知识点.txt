@@ -6,3 +6,17 @@ module exports={} //node的导出语法，webpack运行在node环境下，所以
 ---------------
 html-webpack-plugin:生成html文件插件
 -------------------
+loader:webpack用来预处理模块的，在一个模块被引用之前，可以用loader来先处理模块的内容
+--------------
+url-loader:增强型的file-loader
+{
+             test:/\.(jpg|png)$/,
+                use:[{
+                    loader:'url-loader',
+                    options:{
+                        limit:819200 //文件小于819200的图片不会打包，会进行base64编码，大于这个的会进行打包
+                    }
+                }],
+
+            }
+-----------------------------------

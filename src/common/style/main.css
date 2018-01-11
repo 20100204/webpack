@@ -1,0 +1,11 @@
+body{
+    background: url('../imgs/1.jpg');
+}
+@@font-face{
+    font-family: 'f';
+    src:url('../fonts/glyphicons-halflings-regular.eot')
+}
+#ziti{
+    font-family: f;
+    font-size: 50px;
+}

@@ -8,8 +8,32 @@ module.exports={
     },
     plugins:[
         new HtmlWebpackPlugin({
-            filename:'abc.html',
+            filename:'index.html',
             template:'./src/index.html'
         })
-    ]
+    ],
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: ['style-loader','css-loader']
+            },{
+             test:/\.(jpg|png)$/,
+                use:[{
+                    loader:'url-loader',
+                    options:{
+                        limit:819200
+                    }
+                }],
+
+            },
+            {
+                test:/\.(woff2?|eot|ttf|otf)$/,
+                use:[{
+                    loader:'url-loader'
+                }]
+            }
+        ]
+    }
+
 }
