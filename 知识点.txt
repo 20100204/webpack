@@ -1,0 +1,7 @@
+字体，图片，样式，js都是模块
+前端工程师要模块化开发，浏览器不支持模块化开发的语法，于是又了各种打包工具如：webpack
+
+export default{}  //es6 的导出语法；
+module exports={} //node的导出语法，webpack运行在node环境下，所以要用node的语法
+---------------
+html-webpack-plugin:生成html文件插件
