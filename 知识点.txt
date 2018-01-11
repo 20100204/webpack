@@ -5,3 +5,4 @@ export default{}  //es6 的导出语法；
 module exports={} //node的导出语法，webpack运行在node环境下，所以要用node的语法
 ---------------
 html-webpack-plugin:生成html文件插件
+-------------------
